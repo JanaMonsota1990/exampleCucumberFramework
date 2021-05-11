@@ -15,35 +15,60 @@ public class JavaHttpURLConnectionDemoBoredAPi {
 
     private static BoredAPOD getApod()throws IOException{
 
-        // Create a neat value object to hold the URL
-        URL url = new URL("https://www.boredapi.com/api/activity");
+        try {
+            // Create a neat value object to hold the URL
+            URL url = new URL("https://www.boredapi.com/api/activity");
 
-        // Open a connection(?) on the URL(?) and cast the response(??)
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            // Open a connection(?) on the URL(?) and cast the response(??)
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-        // Now it's "open", we can set the request method, headers etc.
-        connection.setRequestProperty("accept", "application/json");
+            // Now it's "open", we can set the request method, headers etc.
+            connection.setRequestProperty("accept", "application/json");
 
-        // This line makes the request
-        InputStream responseStream = connection.getInputStream();
+            // This line makes the request
+            InputStream responseStream = connection.getInputStream();
 
-        // Manually converting the response body InputStream to APOD using Jackson
-        ObjectMapper mapper = new ObjectMapper();
-        BoredAPOD apod = mapper.readValue(responseStream, BoredAPOD.class);
+            // Manually converting the response body InputStream to APOD using Jackson
+            ObjectMapper mapper = new ObjectMapper();
+            BoredAPOD apod = mapper.readValue(responseStream, BoredAPOD.class);
 
-        // Finally we have the response
-        //System.out.println(apod.price);
-        return apod;
+            // Finally we have the response
+            //System.out.println(apod.price);
+            return apod;
+        }catch(IOException connectionError){
+            connectionError.getMessage();
+        }
+        return null;
     }
 
     public static int getPrice(){
         try {
             int price = getApod().price;
             return price;
-        }catch(IOException nonull){
-            nonull.getMessage();
+        }catch(IOException getPriceException){
+            getPriceException.getMessage();
         }
         return 00000;
+    }
+
+    public static String getActivity(){
+        try {
+            String Activity = getApod().activity;
+            return Activity;
+        }catch(IOException getActivityActivity){
+            getActivityActivity.getMessage();
+        }
+        return null;
+    }
+
+    public static String getParticipants(){
+        try {
+            String participants = getApod().participants;
+            return participants;
+        }catch(IOException getParticipantsException){
+            getParticipantsException.getMessage();
+        }
+        return null;
     }
 
 }
