@@ -1,3 +1,5 @@
+package BoredAPIFeatures;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -5,14 +7,13 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class JavaHttpURLConnectionDemo {
+public class JavaHttpURLConnectionDemoBoredAPi {
 
+    public JavaHttpURLConnectionDemoBoredAPi () {
 
-    public JavaHttpURLConnectionDemo () throws IOException {
-        APIconnection();
     }
 
-    public static void APIconnection()throws IOException{
+    private static BoredAPOD getApod()throws IOException{
 
         // Create a neat value object to hold the URL
         URL url = new URL("https://www.boredapi.com/api/activity");
@@ -31,8 +32,18 @@ public class JavaHttpURLConnectionDemo {
         BoredAPOD apod = mapper.readValue(responseStream, BoredAPOD.class);
 
         // Finally we have the response
-        System.out.println(apod.price);
+        //System.out.println(apod.price);
+        return apod;
+    }
 
+    public static int getPrice(){
+        try {
+            int price = getApod().price;
+            return price;
+        }catch(IOException nonull){
+            nonull.getMessage();
+        }
+        return 00000;
     }
 
 }
