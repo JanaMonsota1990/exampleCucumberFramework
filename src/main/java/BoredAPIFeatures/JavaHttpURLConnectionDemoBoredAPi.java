@@ -13,11 +13,11 @@ public class JavaHttpURLConnectionDemoBoredAPi {
 
     }
 
-    private static BoredAPOD getApod()throws IOException{
+    private static BoredAPOD getApod(String endpoint)throws IOException{
 
         try {
             // Create a neat value object to hold the URL
-            URL url = new URL("https://www.boredapi.com/api/activity");
+            URL url = new URL(endpoint);
 
             // Open a connection(?) on the URL(?) and cast the response(??)
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();

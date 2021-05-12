@@ -1,2 +1,5 @@
-package MarvelAPIFeature.FetchesCharactersListResponseDefinition;public class response {
+package MarvelAPIFeature.FetchesCharactersListResponseDefinition;
+
+public class marvelAPIresponse {
+
 }
