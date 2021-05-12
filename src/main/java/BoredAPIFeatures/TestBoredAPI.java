@@ -23,6 +23,7 @@ public class TestBoredAPI {
     @DisplayName("Activity Test")
     public void connectionBoredAPIdemo_Activity() throws IOException {
         JavaHttpURLConnectionDemoBoredAPi connectionDemo = new JavaHttpURLConnectionDemoBoredAPi();
+        System.out.println(connectionDemo.getActivity());
         assertFalse(connectionDemo.getActivity().equalsIgnoreCase("Listen to music you heard alot"));
     }
 
