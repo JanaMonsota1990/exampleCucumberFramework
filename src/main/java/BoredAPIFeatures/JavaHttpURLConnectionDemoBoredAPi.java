@@ -34,6 +34,8 @@ public class JavaHttpURLConnectionDemoBoredAPi {
 
             // Finally we have the response
             //System.out.println(apod.price);
+
+            //return response object
             return apod;
         }catch(IOException connectionError){
             connectionError.getMessage();

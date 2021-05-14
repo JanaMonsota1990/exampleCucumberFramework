@@ -77,6 +77,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:tag-expressions:1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-expressions:7.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:datatable:1.1.14" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-junit:4.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-junit:6.10.3" level="project" />
   </component>
 </module>
