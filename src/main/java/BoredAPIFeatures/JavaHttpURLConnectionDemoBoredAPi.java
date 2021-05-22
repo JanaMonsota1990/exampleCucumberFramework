@@ -13,11 +13,11 @@ public class JavaHttpURLConnectionDemoBoredAPi {
 
     }
 
-    private static BoredAPOD getApod(String endpoint)throws IOException{
+    private static BoredAPOD getApod()throws IOException{
 
         try {
             // Create a neat value object to hold the URL
-            URL url = new URL(endpoint);
+            URL url = new URL("https://www.boredapi.com/api/activity");
 
             // Open a connection(?) on the URL(?) and cast the response(??)
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -34,6 +34,8 @@ public class JavaHttpURLConnectionDemoBoredAPi {
 
             // Finally we have the response
             //System.out.println(apod.price);
+
+            //return response object
             return apod;
         }catch(IOException connectionError){
             connectionError.getMessage();
