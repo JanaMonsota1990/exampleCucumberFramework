@@ -1,2 +1,3 @@
-apiConnection.class
-Features.class
+BoredAPIFeatures\JavaHttpURLConnectionDemoBoredAPi.class
+BoredAPIFeatures\TestBoredAPI.class
+BoredAPIFeatures\BoredAPOD.class

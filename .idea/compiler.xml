@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="prueba2" />
+        <module name="Selenium.Cucumber.BaseFramework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="prueba2" target="1.8" />
+      <module name="Selenium.Cucumber.BaseFramework" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

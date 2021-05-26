@@ -13,13 +13,15 @@ public class BoredAPOD {
         public final String accessibility;
 
 
-        public BoredAPOD(@JsonProperty("activity") String activity,
+        public BoredAPOD(
+                @JsonProperty("activity") String activity,
                     @JsonProperty("type") String type,
                     @JsonProperty("participants") String participants,
                     @JsonProperty("price") int price,
                     @JsonProperty("link") String link,
                     @JsonProperty("key") String key,
-                    @JsonProperty("accessibility") String accessibility){
+                    @JsonProperty("accessibility") String accessibility
+        ){
             this.activity = activity;
             this.type = type;
             this.participants = participants;
@@ -27,7 +29,6 @@ public class BoredAPOD {
             this.link = link;
             this.key = key;
             this.accessibility = accessibility;
-
         }
 
 }

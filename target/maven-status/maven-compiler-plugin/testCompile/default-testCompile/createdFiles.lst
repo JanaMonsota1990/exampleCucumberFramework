@@ -1,1 +1,7 @@
-MyTests.class
+StepDefinitions\StepDefinitions.class
+Functions\WebDriverFactory.class
+StepDefinitions\TestRunner.class
+Functions\SeleniumFunctions.class
+Functions\CreateDriver.class
+StepDefinitions\Hooks.class
+StepDefinitions\BoredAPIStepDefinition.class
