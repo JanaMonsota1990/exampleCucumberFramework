@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:Features",
-        glue = "classpath:StepDefinitions"
+        glue = "classpath:BoredAPIStepDefinition"
                 //"classpath:Features"
 )
 

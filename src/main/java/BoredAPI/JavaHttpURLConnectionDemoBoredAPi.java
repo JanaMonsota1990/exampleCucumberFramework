@@ -1,4 +1,4 @@
-package BoredAPIFeatures;
+package BoredAPI;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

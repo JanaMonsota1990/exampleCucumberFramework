@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import BoredAPIFeatures.JavaHttpURLConnectionDemoBoredAPi;
+import BoredAPI.JavaHttpURLConnectionDemoBoredAPi;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,7 +14,7 @@ public class BoredAPIStepDefinition {
 
 
     @When ("I hit it with (.*)")
-    public void hittingBoredEndpoint(String activityType)throws IOException {
+    public void hittingBoredEndpoint()throws IOException {
         JavaHttpURLConnectionDemoBoredAPi connection ;
     }
 

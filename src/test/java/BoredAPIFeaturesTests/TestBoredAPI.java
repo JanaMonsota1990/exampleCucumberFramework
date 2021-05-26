@@ -1,6 +1,7 @@
-package BoredAPIFeatures;
+package BoredAPIFeaturesTests;
 
 
+import BoredAPI.JavaHttpURLConnectionDemoBoredAPi;
 import org.junit.Assert;
 import org.junit.Test;
 import java.io.IOException;
